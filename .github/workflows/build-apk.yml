@@ -38,7 +38,7 @@ jobs:
         run: |
           sdkmanager \
             "platform-tools" \
-            "platforms;android-37" \
+            "platforms;android-36" \
             "cmake;3.22.1"
 
       - name: Install NDK
