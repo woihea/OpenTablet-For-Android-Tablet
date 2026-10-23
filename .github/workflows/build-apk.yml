@@ -27,8 +27,12 @@ jobs:
 
       - name: Set up Android SDK
         uses: android-actions/setup-android@v4
-        with:
-          packages: "platform-tools"
+
+      - name: Check available Android SDK platforms
+        run: |
+          sdkmanager --list
+          echo "Checking API 37 SDK packages..."
+          sdkmanager --list | grep -E 'platforms;android-37([.]0)?([[:space:]]|$)' || true
 
       - name: Install Android SDK and native build tools
         run: |
