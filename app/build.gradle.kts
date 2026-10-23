@@ -5,13 +5,13 @@ plugins {
 android {
     namespace = "personal.sushi.opentabletforandroidtablet"
     compileSdk {
-        version = release(37)
+        version = release(36)
     }
 
     defaultConfig {
         applicationId = "personal.sushi.opentabletforandroidtablet"
         minSdk = 32
-        targetSdk = 37
+        targetSdk = 36
         versionCode = 3
         versionName = "1.3"
 
